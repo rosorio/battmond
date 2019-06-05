@@ -13,6 +13,7 @@
 .Op Fl i Ar interval
 .Op Fl W Ar warning
 .Op Fl H Ar halt
+.Op Fl Z
 .Op Fl h
 .Sh DESCRIPTION
 .Nm battmond
@@ -49,6 +50,8 @@ and
 options respectively. Values are expressed in percentage of maximum
 charge, with default values being 10 (%) for the warning message and 5
 (%) for the system halt.
+.Nm -Z
+Suspend an ACPI or APM system instead of halting the system.
 Finally,
 .Nm -h
 prints a brief help message to the stderr and terminates the program.
